@@ -1,0 +1,273 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://fonts.gstatic.com/l/font?kit=FwZc7-Am2FI_-VOxaLDvvq27rWO7&skey=96867d716c89840e&v=v19) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pangolin';
+    src: url(https://fonts.gstatic.com/s/pangolin/v11/cY9GfjGcW0FPpi-tWMfC79zqiA.woff2) format('woff2');
+}
+
+* {
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #222222;
+}
+
+body {
+    width: 700px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+/*header*/
+header {
+    height: 80px;
+    border-bottom: 1px #ccc;
+    line-height: 80px;
+}
+
+#course-name {
+    font-family: Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+
+}
+
+.stack-circle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ffee00;
+    border-radius: 100%;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    transform: rotate(-30deg);
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#quiz-name {
+    height: 425px;
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#html-quiz {
+    max-width: 75%;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+    font-size: 60px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#author {
+    font-size: 14px;
+    text-align: center;
+}
+
+#introduction {
+    line-height: 18px;
+}
+
+#box-start {
+    background-color: #f1f1f1;
+    border: solid 1px #dcdcdc;
+    margin-top: 36px;
+    text-align: center;
+    padding: 18px;
+}
+
+#btn-start {
+    color: white;
+    background-color: #2196F3;
+    margin-top: 18px;
+    padding: 18px;
+}
+
+#btn-start:hover {
+    background-color: #0d8bf2;
+}
+
+
+/*attempt quiz*/
+#attempt-quiz {
+    /* display: none; */
+} 
+
+.option {
+    background-color: #f1f1f1;
+    margin-top: 1px;
+    border: 1px white;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+.option:hover {
+    background-color: #ddd;
+}
+
+.question-index {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.question-text {
+    margin-bottom: 30px;
+}
+
+.option-selected {
+    background-color: #ddd;
+    margin-top: 1px;
+    border: 1px white;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+.opt-text {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    margin: 15px;
+}
+
+#box-submit {
+    background-color: #f1f1f1;
+    border: solid 1px #dcdcdc;
+    margin-top: 36px;
+    text-align: center;
+    padding: 18px;
+}
+
+#btn-submit {
+    color: white;
+    background-color: #4CAF50;
+    padding: 18px;
+}
+
+#btn-submit:hover {
+    background-color: #46a049;
+}
+
+
+/*review-quiz*/
+#review-quiz {
+    /* display: none; */
+}
+
+.option-correct {
+    background-color: #ddd;
+    margin-top: 1px;
+    position: relative;
+    border: 1px white;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+.correct-answer {
+    background-color: #d4edda;
+    margin-top: 1px;
+    position: relative;
+    border: 1px white;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+.wrong-answer {
+    background-color: #f8d7da;
+    margin-top: 1px;
+    position: relative;
+    border: 1px white;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+/*correct answer
+  Your answer*/
+.lable-answer {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px;
+}
+
+
+#box-result {
+    background-color: #f1f1f1;
+    border: solid 1px #dcdcdc;
+    margin-top: 36px;
+    text-align: center;
+    padding: 18px;
+}
+
+#btn-try-again {
+    color: white;
+    background-color: #2196F3;
+    margin-top: 18px;
+    padding: 18px;
+}
+
+#btn-try-again:hover {
+    background-color: #0d8bf2;
+}
+
+
+#number-of-correct-answer {
+    font-size: 24px;
+}
+
+#correct-percent {
+    font-weight: bold;
+}
+
+/*Result:*/
+#result-title {
+    font-size: 50px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+/*Mobile layout*/
+@media screen and (max-width: 700px) {
+    body {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #stack {
+        display: none;
+    }
+}
+
+.hidden {
+    display: none;
+}
